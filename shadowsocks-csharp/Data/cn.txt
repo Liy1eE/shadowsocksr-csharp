@@ -142,6 +142,7 @@ Avg DSpeed=下载
 Max DSpeed=最高
 Avg UpSpeed=上传
 Max UpSpeed=最高
+Server Detail=服务器详情
 Upload=总上传
 Dload=总下载
 DloadRaw=实下载

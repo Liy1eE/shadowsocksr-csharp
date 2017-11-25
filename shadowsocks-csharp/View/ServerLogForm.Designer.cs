@@ -50,6 +50,7 @@
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Group = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Server = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ServerDetail = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Enable = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TotalConnect = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Connecting = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -81,6 +82,7 @@
             this.ID,
             this.Group,
             this.Server,
+            this.ServerDetail,
             this.Enable,
             this.TotalConnect,
             this.Connecting,
@@ -106,7 +108,7 @@
             this.ServerDataGrid.ReadOnly = true;
             this.ServerDataGrid.RowHeadersVisible = false;
             this.ServerDataGrid.RowTemplate.Height = 23;
-            this.ServerDataGrid.Size = new System.Drawing.Size(132, 34);
+            this.ServerDataGrid.Size = new System.Drawing.Size(203, 42);
             this.ServerDataGrid.TabIndex = 0;
             this.ServerDataGrid.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ServerDataGrid_CellClick);
             this.ServerDataGrid.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ServerDataGrid_CellDoubleClick);
@@ -133,7 +135,7 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(132, 22);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(203, 28);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // ID
@@ -162,6 +164,12 @@
             this.Server.Name = "Server";
             this.Server.ReadOnly = true;
             this.Server.Width = 88;
+            // 
+            // ServerDetail
+            // 
+            this.ServerDetail.HeaderText = "Server Detail";
+            this.ServerDetail.Name = "ServerDetail";
+            this.ServerDetail.ReadOnly = true;
             // 
             // Enable
             // 
@@ -327,11 +335,11 @@
             // 
             // ServerLogForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(132, 22);
+            this.ClientSize = new System.Drawing.Size(203, 28);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "ServerLogForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ServerLog";
@@ -351,6 +359,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn Group;
         private System.Windows.Forms.DataGridViewTextBoxColumn Server;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ServerDetail;
         private System.Windows.Forms.DataGridViewTextBoxColumn Enable;
         private System.Windows.Forms.DataGridViewTextBoxColumn TotalConnect;
         private System.Windows.Forms.DataGridViewTextBoxColumn Connecting;
